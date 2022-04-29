@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task_name": "Go home",
+      "task_detail": "Go home by bus before evening",
+      "completed:": "true"
+    },
+    {
+      "id": 2,
+      "task_name": "Have dinner",
+      "task_detail": "Have dinner with family",
+      "completed:": "true"
+    },
+    {
+      "id": 3,
+      "task_name": "Takeout the trash",
+      "task_detail": "Take the trash outside the house",
+      "completed:": "false"
+    },
+    {
+      "id": 4,
+      "task_name": "Wash the dishes",
+      "task_detail": "Do the dishes after dinner",
+      "completed:": "true"
+    },
+    {
+      "id": 5,
+      "task_name": "Play games",
+      "task_detail": "Play games on the computer",
+      "completed:": "true"
+    },
+    {
+      "id": 6,
+      "task_name": "Go to sleep",
+      "task_detail": "Go to bed before 12pm",
+      "completed:": "true"
+    }
+  ]
+}
