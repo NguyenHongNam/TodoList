@@ -1,3 +1,10 @@
 #tasks:hover {
     transform: scale(1.01);
 }
+.bg-warning{
+    background-color: lightblue !important;
+}
+.btn-outline-success{
+    color:lightblue;
+    border-color: lightblue;
+}
