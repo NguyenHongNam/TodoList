@@ -24,9 +24,9 @@
                         <div class="p-2 shadow border" id="tasks" >
                             <div class="input-group row ps-3" >
                                 <div> 
-                                    <strong class="card col-md-10 border-0"> {{task.task_name}}</strong>
+                                    <strong class="card col-md-10 border-0"> {{task.TaskName}}</strong>
                                      </div>
-                                <small class="card col-md-10 border-0"> {{task.task_detail}} </small>
+                                <small class="card col-md-10 border-0"> {{task.TaskDetail}} </small>
                                 <i class="bi bi-pencil-square"data-bs-toggle="modal" type="button" data-bs-target="#exampleModal" (click)="call(task)" ></i>
                                 <div>
                                     <i class="bi bi-trash3" type="button" (click)="deleteTask(task)"></i>

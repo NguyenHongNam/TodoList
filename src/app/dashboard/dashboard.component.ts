@@ -37,8 +37,8 @@ export class DashboardComponent implements OnInit {
   }
 
   addTask() {
-    this.taskObj.task_name = this.addTaskValue;
-    this.taskObj.task_detail = this.addTaskDetail;
+    this.taskObj.TaskName = this.addTaskValue;
+    this.taskObj.TaskDetail = this.addTaskDetail;
     this.crudService.addTask(this.taskObj).subscribe(res => {
       this.ngOnInit();
       this.addTaskValue = '';
@@ -49,8 +49,8 @@ export class DashboardComponent implements OnInit {
   }
 
   editTask() {
-    this.taskObj.task_name = this.editTaskValue;
-    this.taskObj.task_detail = this.editTaskDetail;
+    this.taskObj.TaskName = this.editTaskValue;
+    this.taskObj.TaskDetail = this.editTaskDetail;
     this.crudService.editTask(this.taskObj).subscribe(res => {
       this.ngOnInit();
     }, err=> {
@@ -68,6 +68,6 @@ export class DashboardComponent implements OnInit {
 
   call(etask : Task) {
     this.taskObj = etask;
-    this.editTaskValue = etask.task_name;
+    this.editTaskValue = etask.TaskName;
   }
 }

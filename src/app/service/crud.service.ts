@@ -11,23 +11,23 @@ export class CrudService {
   serviceURL : string ;
 
   constructor(private http : HttpClient) {
-    this.serviceURL = "http://localhost:3000/tasks"
+    this.serviceURL = "https://localhost:44369/"
   }
 
   addTask(task : Task) : Observable<Task> {
-    return this.http.post<Task>(this.serviceURL,task);
+    return this.http.post<Task>(this.serviceURL+'api/Task',task);
   }
 
   getAllTask() : Observable<Task[]> {
-    return this.http.get<Task[]>(this.serviceURL);
+    return this.http.get<Task[]>(this.serviceURL+ 'api/Task');
   }
 
   deleteTask(task : Task) : Observable<Task> {
-    return this.http.delete<Task>(this.serviceURL+'/'+task.id);
+    return this.http.delete<Task>(this.serviceURL+'api/Task'+task.TaskId);
   }
 
   editTask(task : Task) : Observable<Task> {
-    return this.http.put<Task>(this.serviceURL+'/'+task.id,task);
+    return this.http.put<Task>(this.serviceURL+'api/Task'+task.TaskId,task);
   }
 
 }
